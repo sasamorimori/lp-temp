@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// Settings
+@import "settings/setting";
+
+// Plugins
+@import "~aos/dist/aos.css";
+@import "~html5-reset";
+
+// Base
+@import "base/default";
+
+// Layouts
+@import "layouts/header";
+@import "layouts/main";
+@import "layouts/footer";
+
+// Pages
+@import "pages/index";

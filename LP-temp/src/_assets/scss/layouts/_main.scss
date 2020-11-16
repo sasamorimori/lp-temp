@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+main{
+  height: 1000px;
+  .Container{
+    @include ContentSetting;
+  }
+}

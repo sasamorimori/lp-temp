@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+.Footer {
+  overflow: hidden;
+  min-width: 1000px;
+  background: white;
+  @media (max-width: 768px) {
+    min-width: 100%;
+  }
+  .Footer-Inner {
+    margin: 0 auto;
+    padding: 40px 0 0;
+    .Sns-List {
+      display: flex;
+      -ms-flex-pack: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      .Sns-List-Item {
+        width: auto;
+        &:not(:first-of-type) {
+          margin-left: 4%;
+        }
+        a {
+          display: block;
+          img {
+            vertical-align: top;
+          }
+        }
+      }
+    }
+    .Nav-List a {
+      text-decoration: none;
+      color: black;
+    }
+    .Copyright {
+      display: block;
+      margin-top: 25px;
+      padding: 10px 0;
+      font-size: 0.8rem;
+      text-align: center;
+      letter-spacing: -0.01rem;
+      color: #888;
+      background-color: #d2d2d2;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Footer-Inner {
+    padding: 60px 0 20px;
+    text-align: center;
+  }
+
+  .Footer {
+    .Sns-List .Sns-List-Item {
+      width: 48px;
+      height: 48px;
+
+      &:not(:first-of-type) {
+        margin-left: 19px;
+      }
+
+      a {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .Nav-List {
+      display: flex;
+      -ms-flex-pack: justify;
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 35px;
+      font-size: 1.2rem;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      &.detail {
+        margin-top: 0;
+      }
+
+      a {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 70px;
+      font-size: 1.2rem;
+      letter-spacing: inherit;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Footer .Nav-List {
+    margin-top: 25px;
+    margin-left: -5.33333%;
+    font-size: 1.1rem;
+    text-align: center;
+
+    &.detail {
+      margin-top: 0;
+    }
+
+    .Nav-List-Item {
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: 5.33333%;
+
+      &:first-of-type, &:nth-of-type(5) {
+        margin-left: 0;
+      }
+
+      &:nth-of-type(3), &:nth-of-type(4) {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+}
